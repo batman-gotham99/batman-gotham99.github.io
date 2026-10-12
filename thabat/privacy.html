@@ -83,14 +83,14 @@
   <h2>What is sent when "Share anonymous usage" is on</h2>
   <p>This switch is in <span class="path">Settings → Data → Share anonymous usage</span>. During the beta it starts on. When it is on, two kinds of data leave your phone.</p>
 
-  <p><strong>1. Anonymous usage events, sent to PostHog (EU region).</strong> Twelve kinds of events, such as "a routine was logged", "a day closed" or "a note was written". They tell us which features help. Each event carries:</p>
+  <p><strong>1. Anonymous usage events, sent to PostHog (EU region).</strong> Twelve kinds of events plus which screen was open, such as "a routine was logged", "a day closed", "a note was written" or "the Settings screen was open". A screen is named only by a fixed name such as Today or Settings, never by anything on it. They tell us which features help. Each event carries:</p>
   <ul>
     <li>a random install id made on your phone (not your phone's own id, and not an advertising id);</li>
     <li>for events about a routine, a random key for that routine, never its name;</li>
     <li>the platform (iPhone or Android), the app build, the beta or release stage, your language setting and text direction, and any test group;</li>
     <li>general device details the analytics library adds, such as the phone model, system version and screen size.</li>
   </ul>
-  <p>Settings → About → What we collect lists all twelve events in plain words.</p>
+  <p>Settings → About → What we collect lists all twelve events, and the screen views, in plain words.</p>
 
   <p><strong>2. Crash reports, sent to Sentry (EU region).</strong> When the app fails, a report says what went wrong: the error, the stack trace, the app build, the phone model and system version. Before a report leaves your phone, routine names, checklist parts, notes, todos, feedback text and your name are replaced with placeholders. A report never includes screenshots.</p>
 
